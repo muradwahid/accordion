@@ -1,0 +1,19 @@
+{
+  "name": "b-blocks-accordion",
+  "version": "1.0.0",
+  "description": "Gutenberg Accordion Block",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "test": "wp-scripts test-unit-js"
+  },
+  "dependencies": {
+    "@wordpress/block-editor": "^12.9.0",
+    "@wordpress/blocks": "^12.19.0",
+    "@wordpress/components": "^25.7.0",
+    "@wordpress/i18n": "^4.41.0"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.13.0"
+  }
+}

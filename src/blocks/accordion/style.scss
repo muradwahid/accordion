@@ -1,0 +1,85 @@
+.wp-block-b-blocks-accordion {
+    .accordion-item {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow: hidden;
+        
+        .accordion-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: var(--bg-color, #fff);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            
+            h4 {
+                margin: 0;
+                color: var(--text-color, #222);
+                flex: 1;
+            }
+            
+            .accordion-icon {
+                margin-left: 10px;
+                transition: transform 0.3s ease;
+            }
+            
+            &.active .accordion-icon {
+                transform: rotate(180deg);
+            }
+        }
+        
+        .accordion-content {
+            padding: 15px;
+            background-color: var(--bg-color, #fff);
+            color: var(--text-color, #222);
+            display: none;
+            
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
+
+/* Style Variations */
+.style-style1 {
+    .accordion-header {
+        background: #f7f7f7;
+        border-bottom: 2px solid #ddd;
+    }
+}
+
+.style-style2 {
+    .accordion-item {
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+}
+
+.style-style3 {
+    .accordion-header {
+        border-left: 4px solid #007cba;
+    }
+}
+
+.style-style4 {
+    .accordion-item {
+        border-radius: 8px;
+        
+        .accordion-header {
+            background: linear-gradient(to right, #f7f7f7, #fff);
+        }
+    }
+}
+
+.style-style5 {
+    .accordion-header {
+        border-bottom: 2px solid #007cba;
+        
+        &.active {
+            background: #007cba;
+            color: #fff;
+        }
+    }
+}
